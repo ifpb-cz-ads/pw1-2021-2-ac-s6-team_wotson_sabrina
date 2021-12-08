@@ -1,6 +1,5 @@
-depositoI = float(input("Por gentileza, informe o valor do deposito: "))
+ValorTotal = float(input("Por gentileza, informe o valor do deposito: "))
 TaxaJuros = float(input("Por gentileza, informe a taxa de juros: "))
-ValorTotal = depositoI
 
 for c in range(12):
     if c > 0: 
