@@ -18,3 +18,4 @@ else:
             print(f"{n} é primo")
         else:
             print(f"{n} não é primo, pois é divisível por {x}")
+ 
