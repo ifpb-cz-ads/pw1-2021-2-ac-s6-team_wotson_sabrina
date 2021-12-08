@@ -1,15 +1,20 @@
-num = int(input("num: "))
-x = 2
-if num == 1 or num == 0:
-    print(f"{num} não é um numero primo")
-elif num == 2:
-    print(f"{num} é um numero primo")
+n = int(input("Digite um número:"))
+if n < 0:
+    print("Número inválido. Digite apenas valores positivos")
+if n == 0 or n == 1:
+    print(f"{n} é um caso especial.")
 else:
-    while (x < num):
-        if x % 2 == 0:
-            if num % x == 0:
-                print(f"{num} não é um numero primo")
+    if n == 2:
+        print("2 é primo")
+    elif n % 2 == 0:
+        print(f"{n} não é primo, pois 2 é o único número par primo.")
+    else:
+        x = 3
+        while(x < n):
+            if n % x == 0:
                 break
-        x=x+1
-        if x == num:
-            print(f"{num} é um numero primo")
+            x = x + 2
+        if x == n:
+            print(f"{n} é primo")
+        else:
+            print(f"{n} não é primo, pois é divisível por {x}")
